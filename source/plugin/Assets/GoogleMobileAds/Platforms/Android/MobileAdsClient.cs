@@ -62,6 +62,11 @@ namespace GoogleMobileAds.Android
             mobileAdsClass.CallStatic("setAppVolume", volume);
         }
 
+        public void DisableMediationInitialization()
+        {
+            //Android Implementation
+        }
+
         public void SetApplicationMuted(bool muted)
         {
             AndroidJavaClass mobileAdsClass = new AndroidJavaClass(Utils.MobileAdsClassName);
